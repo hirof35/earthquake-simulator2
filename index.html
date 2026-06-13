@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript 地震シミュレーター</title>
+    <style>
+        body {
+            margin: 0; padding: 0; background-color: #1a1a1a; color: #fff;
+            font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center;
+        }
+        h1 { margin: 10px 0; font-size: 1.5rem; }
+        #canvas-container { border: 2px solid #444; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+        canvas { display: block; background: #222; }
+        .controls { margin: 15px; padding: 15px; background: #333; border-radius: 8px; display: flex; gap: 15px; align-items: center; }
+        button { padding: 8px 16px; background-color: #ff4757; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #ff6b81; }
+    </style>
+</head>
+<body>
+
+    <h1>Visual Earthquake Simulator</h1>
+    
+    <div id="canvas-container">
+        <canvas id="simCanvas" width="800" height="500"></canvas>
+    </div>
+
+    <div class="controls">
+        <label>
+            マグニチュード: 
+            <input type="range" id="magnitude" min="1" max="9" step="0.5" value="7">
+            <span id="mag-val">7.0</span>
+        </label>
+        <button id="trigger-btn">地震発生</button>
+    </div>
+
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
