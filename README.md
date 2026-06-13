@@ -1,4 +1,5 @@
 # 🗺️ Visual Earthquake Simulator (TypeScript & Canvas)
+<img width="1197" height="816" alt="スクリーンショット 2026-06-14 080442" src="https://github.com/user-attachments/assets/586a961e-232d-46e0-b477-2b296aa98af8" />
 
 TypeScript と HTML5 Canvas API を使用して構築された、ブラウザで動作する2次元の**視覚的地震シミュレーター**です。
 地震波（P波・S波）の伝播速度の違いや、震度（マグニチュード）に応じた構造物の動的な倒壊挙動を視覚的に体験・理解することができます。
@@ -75,4 +76,4 @@ Build Tool: tsc (TypeScript Compiler)
 
 横揺れだけでなく、縦揺れ（直下型地震）のパターンを追加する。
 
-<img width="1197" height="816" alt="スクリーンショット 2026-06-14 080442" src="https://github.com/user-attachments/assets/586a961e-232d-46e0-b477-2b296aa98af8" />
+
